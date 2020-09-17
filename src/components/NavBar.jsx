@@ -4,12 +4,14 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
+import logo from "../images/hubspotLogo.png";
 import TabContainer from "./TabContainer";
 
 const styles = (theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
+    position: "relative",
   },
   colorPrimary: {
     color: "red",

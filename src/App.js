@@ -4,13 +4,16 @@ import HomeIcon from "@material-ui/icons/Home";
 import AddCommentIcon from "@material-ui/icons/AddComment";
 import BorderClearIcon from "@material-ui/icons/BorderClear";
 import DateRangeIcon from "@material-ui/icons/DateRange";
+import Button from "@material-ui/core/Button";
 
+import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import CoursesList from "./components/CourseList";
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <NavBar tabs={tabs} />
       <CoursesList />
     </div>
