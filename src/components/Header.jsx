@@ -127,7 +127,6 @@ export default function Header() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleMenu}
               color="inherit"
             >
               <AccountCircle />
@@ -140,7 +139,7 @@ export default function Header() {
               onClick={handleMenu}
               color="inherit"
             >
-              <AccountCircle />
+              <Typography variant="h6">Minhnln</Typography>
             </IconButton>
 
             <Menu
@@ -162,7 +161,6 @@ export default function Header() {
               <MenuItem onClick={handleClose}>My account</MenuItem>
             </Menu>
           </div>
-          <Typography variant="h6">Minhnln</Typography>
         </Toolbar>
         <Drawer
           anchor={state.anchor}

@@ -8,14 +8,14 @@ import Button from "@material-ui/core/Button";
 
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import CoursesList from "./components/CourseList";
+import EnhancedTable from "./components/EnhancedTable";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <NavBar tabs={tabs} />
-      <CoursesList />
+      <EnhancedTable />
     </div>
   );
 }
