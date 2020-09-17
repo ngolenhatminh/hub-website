@@ -18,6 +18,14 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 
+import ContactsIcon from "@material-ui/icons/Contacts";
+import ConversationsIcon from "@material-ui/icons/Chat";
+import MarketingIcon from "@material-ui/icons/Storefront";
+import SalesIcon from "@material-ui/icons/MoneyOff";
+import ServiceIcon from "@material-ui/icons/Settings";
+import AutomationIcon from "@material-ui/icons/Autorenew";
+import ReportsIcon from "@material-ui/icons/Report";
+
 import logo from "../images/hubspotLogo.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -83,25 +91,66 @@ export default function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button key="Contacts">
+          <ListItemIcon>
+            <ContactsIcon />
+          </ListItemIcon>
+          <ListItemText primary="Contacts" />
+        </ListItem>
       </List>
-      <Divider />
+
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button key="Conversations">
+          <ListItemIcon>
+            <ConversationsIcon />
+          </ListItemIcon>
+          <ListItemText primary="Conversations" />
+        </ListItem>
+      </List>
+
+      <List>
+        <ListItem button key="Marketing">
+          <ListItemIcon>
+            <MarketingIcon />
+          </ListItemIcon>
+          <ListItemText primary="Marketing" />
+        </ListItem>
+      </List>
+
+      <List>
+        <ListItem button key="Sales">
+          <ListItemIcon>
+            <SalesIcon />
+          </ListItemIcon>
+          <ListItemText primary="Sales" />
+        </ListItem>
+      </List>
+
+      <List>
+        <ListItem button key="Service">
+          <ListItemIcon>
+            <ServiceIcon />
+          </ListItemIcon>
+          <ListItemText primary="Service" />
+        </ListItem>
+      </List>
+
+      <List>
+        <ListItem button key="Automation">
+          <ListItemIcon>
+            <AutomationIcon />
+          </ListItemIcon>
+          <ListItemText primary="Automation" />
+        </ListItem>
+      </List>
+
+      <List>
+        <ListItem button key="Reports">
+          <ListItemIcon>
+            <ReportsIcon />
+          </ListItemIcon>
+          <ListItemText primary="Reports" />
+        </ListItem>
       </List>
     </div>
   );

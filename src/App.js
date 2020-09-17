@@ -23,26 +23,44 @@ function App() {
 const tabs = [
   {
     id: 1,
-    label: "Home",
-    component: <h1>Home</h1>,
-    icon: <HomeIcon />,
+    label: "Contacts",
+    component: <h1>Contacts</h1>,
+    icon: <AddCommentIcon />,
   },
   {
     id: 2,
-    label: "Modal",
-    component: <h1>Modal</h1>,
+    label: "Conversations",
+    component: <h1>Conversations</h1>,
     icon: <AddCommentIcon />,
   },
   {
     id: 3,
-    label: "GridList",
-    component: <h1>GridList</h1>,
+    label: "Marketing",
+    component: <h1>Marketing</h1>,
     icon: <BorderClearIcon />,
   },
   {
     id: 4,
-    label: "DatePickers",
-    component: <h1>DatePickers</h1>,
+    label: "Sales",
+    component: <h1>Sales</h1>,
+    icon: <DateRangeIcon />,
+  },
+  {
+    id: 5,
+    label: "Services",
+    component: <h1>Services</h1>,
+    icon: <DateRangeIcon />,
+  },
+  {
+    id: 6,
+    label: "Automation",
+    component: <h1>Automation</h1>,
+    icon: <DateRangeIcon />,
+  },
+  {
+    id: 7,
+    label: "Reports",
+    component: <h1>Reports</h1>,
     icon: <DateRangeIcon />,
   },
 ];
