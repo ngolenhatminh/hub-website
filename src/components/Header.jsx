@@ -2,22 +2,18 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
-import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import AccountCircle from "@material-ui/icons/AccountCircle";
+
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 
+import AccountCircle from "@material-ui/icons/AccountCircle";
 import ContactsIcon from "@material-ui/icons/Contacts";
 import ConversationsIcon from "@material-ui/icons/Chat";
 import MarketingIcon from "@material-ui/icons/Storefront";
@@ -25,6 +21,8 @@ import SalesIcon from "@material-ui/icons/MoneyOff";
 import ServiceIcon from "@material-ui/icons/Settings";
 import AutomationIcon from "@material-ui/icons/Autorenew";
 import ReportsIcon from "@material-ui/icons/Report";
+import SearchIcon from "@material-ui/icons/Search";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 
 import logo from "../images/hubspotLogo.png";
 
@@ -172,6 +170,22 @@ export default function Header() {
             Companies
           </Typography>
           <div>
+            <IconButton color="inherit">
+              <SearchIcon />
+            </IconButton>
+
+            <IconButton color="inherit">
+              <MarketingIcon />
+            </IconButton>
+
+            <IconButton color="inherit">
+              <ServiceIcon />
+            </IconButton>
+
+            <IconButton color="inherit">
+              <NotificationsIcon />
+            </IconButton>
+
             <IconButton
               aria-label="account of current user"
               aria-controls="menu-appbar"
