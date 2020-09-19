@@ -166,13 +166,11 @@ export default function Header() {
           >
             <img src={logo} height="45" />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Companies
-          </Typography>
+          <Typography variant="h6" className={classes.title}></Typography>
           <div>
-            <IconButton color="inherit">
+            {/* <IconButton color="inherit">
               <SearchIcon />
-            </IconButton>
+            </IconButton> */}
 
             <IconButton color="inherit">
               <MarketingIcon />
